@@ -85,51 +85,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles /Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build//CMakeFiles/progress.marks
@@ -162,96 +117,72 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named feed_handler
+# Target rules for targets named OrderBookSystem
 
 # Build rule for target.
-feed_handler: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 feed_handler
-.PHONY : feed_handler
+OrderBookSystem: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OrderBookSystem
+.PHONY : OrderBookSystem
 
 # fast build rule for target.
-feed_handler/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/build
-.PHONY : feed_handler/fast
+OrderBookSystem/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/build
+.PHONY : OrderBookSystem/fast
 
-src/FeedHandler.o: src/FeedHandler.cpp.o
-.PHONY : src/FeedHandler.o
-
-# target to build an object file
-src/FeedHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/FeedHandler.cpp.o
-.PHONY : src/FeedHandler.cpp.o
-
-src/FeedHandler.i: src/FeedHandler.cpp.i
-.PHONY : src/FeedHandler.i
-
-# target to preprocess a source file
-src/FeedHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/FeedHandler.cpp.i
-.PHONY : src/FeedHandler.cpp.i
-
-src/FeedHandler.s: src/FeedHandler.cpp.s
-.PHONY : src/FeedHandler.s
-
-# target to generate assembly for a file
-src/FeedHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/FeedHandler.cpp.s
-.PHONY : src/FeedHandler.cpp.s
-
-src/MatchingStrategy.o: src/MatchingStrategy.cpp.o
-.PHONY : src/MatchingStrategy.o
+src/Order.o: src/Order.cpp.o
+.PHONY : src/Order.o
 
 # target to build an object file
-src/MatchingStrategy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/MatchingStrategy.cpp.o
-.PHONY : src/MatchingStrategy.cpp.o
+src/Order.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/src/Order.cpp.o
+.PHONY : src/Order.cpp.o
 
-src/MatchingStrategy.i: src/MatchingStrategy.cpp.i
-.PHONY : src/MatchingStrategy.i
+src/Order.i: src/Order.cpp.i
+.PHONY : src/Order.i
 
 # target to preprocess a source file
-src/MatchingStrategy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/MatchingStrategy.cpp.i
-.PHONY : src/MatchingStrategy.cpp.i
+src/Order.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/src/Order.cpp.i
+.PHONY : src/Order.cpp.i
 
-src/MatchingStrategy.s: src/MatchingStrategy.cpp.s
-.PHONY : src/MatchingStrategy.s
+src/Order.s: src/Order.cpp.s
+.PHONY : src/Order.s
 
 # target to generate assembly for a file
-src/MatchingStrategy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/MatchingStrategy.cpp.s
-.PHONY : src/MatchingStrategy.cpp.s
+src/Order.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/src/Order.cpp.s
+.PHONY : src/Order.cpp.s
 
-src/MessageFactory.o: src/MessageFactory.cpp.o
-.PHONY : src/MessageFactory.o
+src/OrderBook.o: src/OrderBook.cpp.o
+.PHONY : src/OrderBook.o
 
 # target to build an object file
-src/MessageFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/MessageFactory.cpp.o
-.PHONY : src/MessageFactory.cpp.o
+src/OrderBook.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/src/OrderBook.cpp.o
+.PHONY : src/OrderBook.cpp.o
 
-src/MessageFactory.i: src/MessageFactory.cpp.i
-.PHONY : src/MessageFactory.i
+src/OrderBook.i: src/OrderBook.cpp.i
+.PHONY : src/OrderBook.i
 
 # target to preprocess a source file
-src/MessageFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/MessageFactory.cpp.i
-.PHONY : src/MessageFactory.cpp.i
+src/OrderBook.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/src/OrderBook.cpp.i
+.PHONY : src/OrderBook.cpp.i
 
-src/MessageFactory.s: src/MessageFactory.cpp.s
-.PHONY : src/MessageFactory.s
+src/OrderBook.s: src/OrderBook.cpp.s
+.PHONY : src/OrderBook.s
 
 # target to generate assembly for a file
-src/MessageFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/MessageFactory.cpp.s
-.PHONY : src/MessageFactory.cpp.s
+src/OrderBook.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/src/OrderBook.cpp.s
+.PHONY : src/OrderBook.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -259,7 +190,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -267,7 +198,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -277,21 +208,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... feed_handler"
-	@echo "... src/FeedHandler.o"
-	@echo "... src/FeedHandler.i"
-	@echo "... src/FeedHandler.s"
-	@echo "... src/MatchingStrategy.o"
-	@echo "... src/MatchingStrategy.i"
-	@echo "... src/MatchingStrategy.s"
-	@echo "... src/MessageFactory.o"
-	@echo "... src/MessageFactory.i"
-	@echo "... src/MessageFactory.s"
+	@echo "... OrderBookSystem"
+	@echo "... src/Order.o"
+	@echo "... src/Order.i"
+	@echo "... src/Order.s"
+	@echo "... src/OrderBook.o"
+	@echo "... src/OrderBook.i"
+	@echo "... src/OrderBook.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

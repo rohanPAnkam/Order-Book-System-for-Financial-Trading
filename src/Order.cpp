@@ -1,4 +1,4 @@
 #include "Order.h"
 
-Order::Order(const std::string& a, int id, char s, int q, double p)
-    : action(a), orderId(id), side(s), quantity(q), price(p) {}
+Order::Order(int id, char s, int qty, double p, int t)
+    : orderid(id), side(s), quantity(qty), price(p), timestamp(t) {}

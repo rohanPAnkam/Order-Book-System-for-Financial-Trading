@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/feed_handler.dir/all
+all: CMakeFiles/OrderBookSystem.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/feed_handler.dir/clean
+clean: CMakeFiles/OrderBookSystem.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/feed_handler.dir
+# Target rules for target CMakeFiles/OrderBookSystem.dir
 
 # All Build rule for target.
-CMakeFiles/feed_handler.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target feed_handler"
-.PHONY : CMakeFiles/feed_handler.dir/all
+CMakeFiles/OrderBookSystem.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles --progress-num=1,2,3,4 "Built target OrderBookSystem"
+.PHONY : CMakeFiles/OrderBookSystem.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/feed_handler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/feed_handler.dir/all
+CMakeFiles/OrderBookSystem.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OrderBookSystem.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles 0
-.PHONY : CMakeFiles/feed_handler.dir/rule
+.PHONY : CMakeFiles/OrderBookSystem.dir/rule
 
 # Convenience name for target.
-feed_handler: CMakeFiles/feed_handler.dir/rule
-.PHONY : feed_handler
+OrderBookSystem: CMakeFiles/OrderBookSystem.dir/rule
+.PHONY : OrderBookSystem
 
 # clean rule for target.
-CMakeFiles/feed_handler.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_handler.dir/build.make CMakeFiles/feed_handler.dir/clean
-.PHONY : CMakeFiles/feed_handler.dir/clean
+CMakeFiles/OrderBookSystem.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBookSystem.dir/build.make CMakeFiles/OrderBookSystem.dir/clean
+.PHONY : CMakeFiles/OrderBookSystem.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
