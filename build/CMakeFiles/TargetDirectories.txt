@@ -1,0 +1,7 @@
+/Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles/feed_handler.dir
+/Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles/edit_cache.dir
+/Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles/rebuild_cache.dir
+/Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles/list_install_components.dir
+/Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles/install.dir
+/Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles/install/local.dir
+/Users/rohanankam/Desktop/c++/Projects/TaraCapitals/build/CMakeFiles/install/strip.dir
