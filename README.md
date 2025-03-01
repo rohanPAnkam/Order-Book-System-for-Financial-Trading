@@ -11,37 +11,19 @@ A high-performance C++ Order Book System that manages and matches buy and sell o
 	•	Modular Structure: Organized with Order and OrderBook classes for scalability and maintainability.
 	•	Cross-Platform Compatibility: Built using CMake for easy compilation across platforms.
 
-📂 Project Structure
-
-OrderBookSystem/
-├── include/
-│   ├── Order.h          // Defines the Order class
-│   └── OrderBook.h      // Defines the OrderBook class
-├── src/
-│   ├── Order.cpp        // Implementation of Order class
-│   ├── OrderBook.cpp    // Implementation of OrderBook class
-│   └── main.cpp         // Entry point to run the system
-└── CMakeLists.txt       // CMake configuration file
-
 📌 Dependencies
 	•	C++17 or higher
 	•	CMake ≥ 3.10
 
 🚀 Build and Run Instructions
-	1.	Clone the Repository
+	1.	git clone https://github.com/yourusername/OrderBookSystem.git
+		cd OrderBookSystem
 
-git clone https://github.com/yourusername/OrderBookSystem.git
-cd OrderBookSystem
+	2.	mkdir build && cd build && cmake .. && make
 
-	2.	Build the Project
+	3.	./OrderBookSystem // Run the Order Book System
 
-mkdir build && cd build
-cmake ..
-make
 
-	3.	Run the Order Book System
-
-./OrderBookSystem
 
 📥 Input Format
 
