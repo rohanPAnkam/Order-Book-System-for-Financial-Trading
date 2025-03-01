@@ -11,9 +11,9 @@ include_directories(include)
 
 # Add source files
 set(SOURCES
-    src/main.cpp
-    src/OrderBook.cpp
-    src/Order.cpp
+    src/RohanMain_tcp.cpp
+    src/RohanOrderBook_tcp.cpp
+    src/RohanOrder_tcp.cpp
 )
 
 # Create the executable
